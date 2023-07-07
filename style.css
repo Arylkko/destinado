@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Varela+Round&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: unset;
+}
+
+a {
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    background-color: #34c9ff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.sticky {
+    display: grid;
+    background-color: #eaf2f5;
+    grid-template-columns: minmax(min-content, auto) minmax(max-content, 1fr) 4fr;
+    grid-template-rows: 60px;
+    align-items: center;
+    grid-template-areas:
+        "logo menu botao";
+}
+
+.botao{
+    background-color: aqua;
+    grid-area: botao;
+    justify-self: end;
+    margin: 0 32px;
+}
+.logo {
+    grid-area: logo;
+    margin: 0 32px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img:hover {
+    animation-name: rotateIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes rotateIn {
+    0% {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, 270deg);
+    }
+
+    100% {
+        transform-origin: center;
+        transform: none;
+    }
+}
+
+.menu{
+    background-color: aqua;
+    grid-area: menu;
+}
+
+.menu:last-child{
+    justify-self: end;
+}
