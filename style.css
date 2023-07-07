@@ -6,6 +6,19 @@
     scroll-behavior: smooth;
 }
 
+p {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Lilita One', cursive;
+    color: #D2A3BC;
+}
+
+
 a {
     font-size: 20px;
     color: #1A2211;
@@ -13,18 +26,44 @@ a {
     text-decoration: none;
 }
 
+.modal-content {
+    background-color: #F0F5EA
+}
+
+.col-form-label {
+    font-size: 25px;
+    font-family: 'Lilita One', cursive;
+    color: #D2A3BC;
+    margin-top: 34px;
+    margin-bottom: 0;
+}
+
+.modal-dialog {
+    width: 670px;
+}
+
+.form-control {
+    background-color: #DFE9D3;
+    font-size: 18px;
+    color: #1A2211;
+}
+
+.form-text {
+    color: rgba(26, 34, 17, 0.67);
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: minmax(8vh, 60px);
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+        "header"
+        "main"
+        "footer";
 }
 
 body {
-    background-color: #34c9ff;
+    background-color: #F0F5EA;
 }
 
 header {
@@ -32,32 +71,49 @@ header {
     top: 0;
     grid-area: header;
     display: grid;
-    background-color: #eaf2f5;
+    background-color: #F0F5EA;
     grid-template-columns: minmax(max-content, auto) 240px 4fr;
     align-items: center;
     grid-template-areas:
         "logo menu botao";
 }
 
-main{
+main {
     grid-area: main;
 }
 
+.stars {
+    width: 100%;
+    height: auto;
+}
+
 nav {
-    display:flex; 
+    display: flex;
     justify-content: space-between;
     grid-area: menu;
 }
 
-.botao {
+nav a:hover {
+    transition-duration: 0.2s;
+    color: #D2A3BC;
+}
+
+.btn-contato {
     grid-area: botao;
     justify-self: end;
     margin: 0 32px;
+    border-radius: 50px;
+    padding: 4px 32px;
+    background-color: #A3BCD2;
+    font-size: 20px;
+    color: #1A2211;
+    font-family: 'Varela Round', sans-serif;
+    transition-duration: 0.4s;
+    border: 0;
 }
 
-.botao p{
-    font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
+.btn-contato:hover {
+    background-color: #8fb0ce;
 }
 
 .logo {
@@ -82,4 +138,3 @@ nav {
         transform: none;
     }
 }
-
