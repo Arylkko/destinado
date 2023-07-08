@@ -31,16 +31,66 @@ a {
 }
 
 .col-form-label {
+    display: block;
     font-size: 25px;
     font-family: 'Lilita One', cursive;
     color: #D2A3BC;
-    margin-top: 34px;
     margin-bottom: 0;
+}
+
+.form-check-input{
+    background-color: #A3BCD2;
+}
+
+.form-check-input:checked{
+    background-color: #A3BCD2;
+    border-color: #A3BCD2; 
 }
 
 .modal-dialog {
     width: 670px;
 }
+
+.modal-header {
+    border: 0;
+    padding-bottom: 0;
+}
+
+.modal-footer {
+    border: 0;
+    padding-top: 0;
+}
+
+.rosa{
+    border-radius: 50px;
+    padding: 7px 32px;
+    background-color: #D2A3BC;
+    font-size: 20px;
+    color: #1A2211;
+    font-family: 'Varela Round', sans-serif;
+    transition-duration: 0.4s;
+    border: 0;
+}
+
+.rosa:hover {
+    background-color: #d185ae;
+}
+
+.azul{
+    border-radius: 50px;
+    padding: 7px 32px;
+    background-color: #A3BCD2;
+    font-size: 20px;
+    color: #1A2211;
+    font-family: 'Varela Round', sans-serif;
+    transition-duration: 0.4s;
+    border: 0;
+}
+
+.azul:hover {
+    background-color: #8fb0ce;
+}
+
 
 .form-control {
     background-color: #DFE9D3;
@@ -98,7 +148,7 @@ nav a:hover {
     color: #D2A3BC;
 }
 
-.btn-contato {
+.contato {
     grid-area: botao;
     justify-self: end;
     margin: 0 32px;
@@ -112,7 +162,7 @@ nav a:hover {
     border: 0;
 }
 
-.btn-contato:hover {
+.contato:hover {
     background-color: #8fb0ce;
 }
 
