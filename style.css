@@ -209,21 +209,21 @@ h1 {
 .landing-l img{
     max-width: 100%;
     width: auto;
-    margin-bottom: 60px;
+    margin-bottom: 10%;
 }
 
 .landing {
     background-color: #DFE9D3;
     display: grid;
-    grid-template-rows: minmax(min-content, 40vw);
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(370px, 40vw);
+    grid-template-columns: minmax(390px, 1fr) 1fr;
     margin: 21px 32px;
-    padding: 0  50px;
+    padding: 0  4%;
 }
 
 .landing p{
     font-size: 1.5vw;
-    margin-bottom: 40px;
+    margin-bottom: 7%;
 }
 
 .landing-r {
@@ -232,11 +232,39 @@ h1 {
 }
 
 .landing-r img{
-    max-width: 100%;
-    width: auto;
     height: 100%;
 }
 
 .novo{
     padding: 40px 80px;
 }
+
+.carousel{
+    background-color: #DFE9D3;
+    max-width: 1060px;
+    border-radius: 20px;
+}
+
+.texto-slide {
+    padding: 20px;
+    margin-left: 20px;
+  }
+  
+  /* Estilos para a imagem do slide */
+  .imagem-slide {
+    padding: 20px;
+    float: right;
+  }
+  
+  /* Estilos para garantir que a imagem fique centralizada */
+  .imagem-slide img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .line{
+    padding: 0 30px;
+    width:100%;
+    height:auto;
+  }
