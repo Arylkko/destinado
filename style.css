@@ -16,6 +16,8 @@ h2 {
     font-size: 40px;
     font-family: 'Lilita One', cursive;
     color: #D2A3BC;
+    margin-left: 5rem;
+    margin-top: 4rem;
 }
 
 
@@ -206,7 +208,7 @@ h1 {
     margin-left: 8px;
 }
 
-.landing-l img{
+.landing-l img {
     max-width: 100%;
     width: auto;
     margin-bottom: 10%;
@@ -218,10 +220,10 @@ h1 {
     grid-template-rows: minmax(370px, 40vw);
     grid-template-columns: minmax(390px, 1fr) 1fr;
     margin: 21px 32px;
-    padding: 0  4%;
+    padding: 0 4%;
 }
 
-.landing p{
+.landing p {
     font-size: 1.5vw;
     margin-bottom: 7%;
 }
@@ -231,15 +233,15 @@ h1 {
     justify-self: end;
 }
 
-.landing-r img{
+.landing-r img {
     height: 100%;
 }
 
-.novo{
-    padding: 40px 80px;
+.novo {
+    padding: 0 80px 40px 80px;
 }
 
-.carousel{
+.carousel {
     background-color: #DFE9D3;
     max-width: 1060px;
     border-radius: 20px;
@@ -248,23 +250,55 @@ h1 {
 .texto-slide {
     padding: 20px;
     margin-left: 20px;
-  }
-  
-  /* Estilos para a imagem do slide */
-  .imagem-slide {
+}
+
+/* Estilos para a imagem do slide */
+.imagem-slide {
     padding: 20px;
     float: right;
-  }
-  
-  /* Estilos para garantir que a imagem fique centralizada */
-  .imagem-slide img {
+}
+
+/* Estilos para garantir que a imagem fique centralizada */
+.imagem-slide img {
     display: inline-block;
     max-width: 100%;
     height: auto;
-  }
-  
-  .line{
+}
+
+.line {
     padding: 0 30px;
-    width:100%;
-    height:auto;
-  }
+    width: 100%;
+    height: auto;
+}
+
+.att {
+    margin: 2rem;
+}
+
+.about {
+    background-color: #DFE9D3;
+    margin: 0 2rem 3rem 2rem;
+    padding: 2% 5%;
+    max-height: 19rem;
+}
+
+.icon{
+ width: 80%;
+ height: auto;
+ display: block;
+ margin: 0 auto;
+}
+
+h3 {
+    font-size: 32px;
+    font-family: 'Lilita One', cursive;
+    color: #D2A3BC;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Lilita One', cursive;
+    color: #8fb0ce;
+    margin-top: 0.5rem;
+    text-align: center;
+}
