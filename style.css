@@ -345,13 +345,17 @@ h4 {
     background-color:#DFE9D3;
     padding: 0.5rem 1rem;
     width: 29rem;
-    height: auto;
+    height: min-content;
+    flex-basis:25%;
 }
 
 .att {
     margin: 2rem;
     display:flex;
     gap: 3rem;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 70rem;
+    align-items: flex-start;
 }
