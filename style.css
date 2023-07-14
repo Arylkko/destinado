@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #F0F5EA;
+}
+
 .texto-colorido {
     color: #D2A3BC;
 }
@@ -32,11 +36,13 @@ a {
     text-decoration: none;
 }
 
+
+/* modal */
 .modal-content {
     background-color: #F0F5EA
 }
 
-.modal-content h2{
+.modal-content h2 {
     margin-top: 0;
     margin-left: 0;
 }
@@ -62,6 +68,11 @@ a {
     width: 670px;
 }
 
+.stars {
+    width: 100%;
+    height: auto;
+}
+
 .modal-header {
     border: 0;
     padding-bottom: 0;
@@ -72,15 +83,19 @@ a {
     padding-top: 0;
 }
 
-.rosa {
+
+.btn {
     border-radius: 50px;
     padding: 7px 32px;
-    background-color: #D2A3BC;
     font-size: 20px;
     color: #1A2211;
     font-family: 'Varela Round', sans-serif;
     transition-duration: 0.4s;
     border: 0;
+}
+
+.rosa {
+    background-color: #D2A3BC;
 }
 
 .rosa:hover {
@@ -88,14 +103,7 @@ a {
 }
 
 .azul {
-    border-radius: 50px;
-    padding: 7px 32px;
     background-color: #A3BCD2;
-    font-size: 20px;
-    color: #1A2211;
-    font-family: 'Varela Round', sans-serif;
-    transition-duration: 0.4s;
-    border: 0;
 }
 
 .azul:hover {
@@ -105,85 +113,49 @@ a {
 
 .form-control {
     background-color: #DFE9D3;
-    font-size: 18px;
     color: #1A2211;
-}
-
-.form-text {
-    color: rgba(26, 34, 17, 0.67);
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: minmax(8vh, 60px);
+    grid-template-rows: 60px auto auto;
     grid-template-areas:
         "header"
         "main"
         "footer";
 }
 
-body {
-    background-color: #F0F5EA;
-}
 
+/* header e nav */
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
     grid-area: header;
-    display: grid;
     background-color: #F0F5EA;
+}
+
+.barra {
+    display: grid;
     grid-template-columns: minmax(max-content, auto) 240px 4fr;
-    align-items: center;
-    grid-template-areas:
-        "logo menu botao";
 }
 
-main {
-    grid-area: main;
+.nav-link {
+    font-size: 20px;
+    color: #1A2211;
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: none;
 }
 
-.stars {
-    width: 100%;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    grid-area: menu;
-}
-
-nav a:hover {
+.nav-links:hover {
     transition-duration: 0.2s;
     color: #D2A3BC;
 }
 
 .contato {
-    grid-area: botao;
     justify-self: end;
-    margin: 0 32px;
-    border-radius: 50px;
     padding: 4px 32px;
-    background-color: #A3BCD2;
-    font-size: 20px;
-    color: #1A2211;
-    font-family: 'Varela Round', sans-serif;
-    transition-duration: 0.4s;
-    border: 0;
 }
 
-.contato:hover {
-    background-color: #8fb0ce;
-}
-
-.logo {
-    grid-area: logo;
-    margin: 0 32px;
-}
-
-.logo img:hover {
+.logo:hover {
     animation-name: rotateIn;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -199,6 +171,12 @@ nav a:hover {
         transform-origin: center;
         transform: none;
     }
+}
+
+
+/* main */
+main {
+    grid-area: main;
 }
 
 h1 {
@@ -258,6 +236,19 @@ h1 {
     margin: 0 auto;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(50%);
+}
+
+.carousel-control-prev {
+    left: -120px; /* Ajuste a posição esquerda conforme necessário */
+}
+
+.carousel-control-next {
+    right: -120px; /* Ajuste a posição direita conforme necessário */
+}
+
 .texto-slide {
     padding: 20px;
     margin-left: 20px;
@@ -297,29 +288,35 @@ h1 {
 }
 
 @keyframes wobble-hor-bottom {
+
     0%,
     100% {
-      transform: translateX(0%);
-      transform-origin: 50% 50%;
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
     }
-    15% {
-      transform: translateX(-30px) rotate(-6deg);
-    }
-    30% {
-      transform: translateX(15px) rotate(6deg);
-    }
-    45% {
-      transform: translateX(-15px) rotate(-3.6deg);
-    }
-    60% {
-      transform: translateX(9px) rotate(2.4deg);
-    }
-    75% {
-      transform: translateX(-6px) rotate(-1.2deg);
-    }
-  }
 
-  
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+
 h3 {
     font-size: 32px;
     font-family: 'Lilita One', cursive;
@@ -335,6 +332,11 @@ h4 {
 }
 
 /* Footer */
+
+footer {
+    grid-area: footer;
+}
+
 .blue {
     background-color: #8fb0ce;
     height: 2rem;
@@ -417,6 +419,22 @@ h4 {
         margin-top: 1.7rem;
     }
 
+    .col-form-label {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .contato{
+        display:none;
+    }
+    
+    .nav-link{
+        font-size: 20px;
+    }
+
     .landing {
         position: relative;
         grid-template-columns: 100%;
@@ -459,15 +477,11 @@ h4 {
         display: none;
     }
 
-    .contato {
-        display: none;
-    }
-
     .novo {
         padding: 0 1rem 2rem 1rem;
     }
 
-    .carousel {
+    .imagem-slide {
         display: none;
     }
 
@@ -549,6 +563,11 @@ h4 {
         font-size: 15px;
     }
 
+
+    .btn {
+        font-size: 10px;
+    }
+
     .info {
         gap: 0.5rem;
     }
@@ -576,4 +595,17 @@ h4 {
     .iconfooter {
         max-width: 90px;
     }
+
+    .logo {
+        width: 80%;
+    }
+
+    .nav-links>*{
+        display: none;
+    }
+
+    .contato{
+        display: none;
+    }
+
 }
