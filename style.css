@@ -413,9 +413,6 @@ footer {
         margin-bottom: 2rem;
     }
 
-.btn{
-    padding:0 1rem;
-}
     .col-form-label {
         font-size: 20px;
     }
@@ -530,6 +527,10 @@ footer {
         font-size: 11px;
     }
 
+    .btn{
+        padding:0 1rem;
+    }
+    
     a {
         font-size: 10px;
     }
