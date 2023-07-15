@@ -194,7 +194,7 @@ main {
     padding: 40px 0 120px;
 }
 
-.landing-l button {
+.landing-l .btn {
     font-size: 1.5vw;
     padding: 6px 25px;
     margin-left: 8px;
@@ -413,7 +413,9 @@ footer {
         margin-bottom: 2rem;
     }
 
-
+.btn{
+    padding:0 1rem;
+}
     .col-form-label {
         font-size: 20px;
     }
@@ -454,8 +456,8 @@ footer {
         z-index: -2;
     }
 
-    .landing-l button {
-        display: none;
+    .landing-l .btn {
+        margin-top: 2rem;
     }
 
     .landing p {
@@ -502,7 +504,6 @@ footer {
         font-size: 12px;
     }
 
-    /* talvez eu precise mexer nisso */
     .footersc {
         display: flex;
         justify-content: center;
